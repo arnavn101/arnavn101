@@ -1,6 +1,6 @@
 # Hello 👋 And Welcome to my GitHub profile! : 
 
-My favorite programming languages is Python! <br /> 
+My favorite programming language is Python! <br /> 
 
 🌱 These are the current projects I'm working on: <br /> 
   ⚡ WebXplore (Scraping) <br />
