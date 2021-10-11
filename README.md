@@ -2,7 +2,7 @@
 
 My favorite programming language is Python! <br /> 
 
-🌱 These are the current projects I'm working on: <br /> 
+🌱 These are some of the projects I've worked on: <br /> 
   ⚡ WebXplore (Scraping) <br />
   ⚡ NotesCreator (https://arnavn101.github.io/) <br />
 
