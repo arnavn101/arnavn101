@@ -1,0 +1,152 @@
+% resume.tex
+% 
+% Credits to: 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%  
+% To compile: 
+% 	latex resume.tex
+%	dvips -Ppdf -t letter resume.dvi
+%	ps2pdf resume.ps resume.pdf
+
+\documentclass[letterpaper,8pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\voffset}{-0.75in}
+\setlength{\headsep}{35pt}
+\setlength{\footskip}{11mm}
+
+
+%-----------------------------------------------------------
+\usepackage{shading}
+\usepackage{setspace}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setstretch{1}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-1pt}}
+\newcommand{\resheading}[1]{{\normalsize \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-4pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\huge Arnav Nidumolu}
+\end{center}
+\begin{tabular*}{7in}{l@{\extracolsep{3.05in}}l}
+\href{tel:9738455265}{(973)-845-5265}& \hfill \href{https://github.com/arnavn101}{github.com/arnavn101} \\
+\href{mailto:arnav.nidumolu@gmail.com}{arnav.nidumolu@gmail.com} & \hfill \href{https://www.linkedin.com/in/arnav-nidumolu/}{linkedin.com/in/arnav-nidumolu} \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{University of Massachusetts Amherst}{Amherst, MA}{B.S., Computer Science (GPA 4.0)}{Graduation `25}
+	\begin{itemize}
+		\resitem{Relevant courses: Discrete mathematics, Computer Systems, Calculus III, Intro to Linear Algebra}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Skills}
+
+\begin{description}
+\item[Languages:]
+Python, Java, C/C++
+\item[Frameworks:]
+Django, Flask, Scikit-learn, Pytorch, Keras, OpenCV, NLTK, Gensim, Celery
+\item[Other Tools:]
+AWS, Git, Docker, Jenkins, Travis, OpenShift, OpenStack, Redis, Bash Scripts
+\end{description}
+
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{AuCode}{Amherst, MA}{Software Enginner Intern}{Jun`22 - Aug`22}
+	\begin{itemize}
+		\resitem{Streamlined the DevOps workflow with Github actions, Amazon ECS, and Application load balancers.}
+		\resitem{Developed web crawling infrastructure with autoscaling capabilities using Redis message queues and Celery workers.}
+		\resitem{Automated migration from from RDS PostgreSQL to Amazon S3 in parquet format.}
+		\resitem{Utilized Gensim/GPT3/Sklearn to train models for topic-modeling and NLP classification tasks.}
+	\end{itemize}
+
+\item
+	\ressubheading{Build UMass}{Amherst, MA}{Software Developer}{Sep`21 - Apr`22}
+	\begin{itemize}
+		\resitem{Fueled startup (funnl.co) by building a social platform that fosters deeper professional relationships.}
+		\resitem{Built critical features of Email scheduling and Identity security.}
+		\resitem{Matured engineering practices with Django unit tests to improve code coverage.}
+	\end{itemize}
+
+\item 
+	\ressubheading{Red Hat}{Boston, MA}{Research Intern for ChRIS Project}{Jun`19 - Aug`19 , Jun`20 - Aug`20}
+	\begin{itemize}
+		\resitem{Designed monitors with Jenkins to measure system performance and created controls for taking corrective actions.}
+		\resitem{Enabled faster runtime for Image detection Proof of Concept with GPU capabilities of Tensorflow.}
+		\resitem{Ensured scalable/reliable services by optimizing multithreading and identifying deadlock scenarios.}
+	\end{itemize}
+
+\item
+	\ressubheading{Freelancer}{Basking Ridge, NJ}{freelancer.com}{Apr`20 - May`20'}
+	\begin{itemize}
+		\resitem{Facilitated detection and removal of significant objects from picture using OpenCV and PyTorch Image Classification model.}
+		\resitem{Deployed Flask service using Gunicorn on Digital Ocean.}
+	\end{itemize}
+
+\end{itemize}
+
+
+\resheading{Hackathons \& Projects}
+\begin{itemize}
+\item
+	\ressubheading{Smart Notes}{HackPHS}{Awarded Best Cloud Hack}{\href{https://arnavn101.github.io/smartnotes}{arnavn101.github.io/smartnotes}}
+	\begin{itemize}
+		\resitem{Creates concise summaries and fetches the main topics of the text with Google's Page Rank algorithm.}
+	\end{itemize}
+
+\item
+	\ressubheading{Path Finder}{HackWHS}{Finalist}{\href{https://github.com/arnavn101/Path_Finder}{github.com/arnavn101/Path\_Finder}}
+	\begin{itemize}
+		\resitem{Suggests an optimized college path for students based on their skills and academic record with artificial neural networks.}
+	\end{itemize}
+
+\item
+	\ressubheading{Quantify}{}{\href{https://github.com/GreenPlanet-Capital/Quantify}{github.com/GreenPlanet-Capital/Quantify}}{}
+	\begin{itemize}
+		\resitem{Performs technical analysis and backtrading for financial assets with Alpaca marketstore integration.}
+	\end{itemize}
+	
+\end{itemize}
+
+\end{document}
