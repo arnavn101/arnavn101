@@ -36,6 +36,8 @@
             urlcolor  = black,
             citecolor = black,
             anchorcolor = black]{hyperref}
+\usepackage{enumitem}
+
 %\textheight=9.0in
 \pagestyle{empty}
 \raggedbottom
@@ -45,9 +47,11 @@
 
 %-----------------------------------------------------------
 %Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-1pt}}
+\newcommand{\resitem}[1]{\item[--] #1 \vspace{-1pt}}
 \newcommand{\resheading}[1]{{\normalsize \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
 \newcommand{\ressubheading}[4]{
+\vspace{0.1in}
+\hspace{7mm}
 \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
@@ -69,14 +73,10 @@
 \vspace{0.1in}
 
 \resheading{Education}
-\begin{itemize}
-\item
 	\ressubheading{University of Massachusetts Amherst}{Amherst, MA}{B.S. Computer Science (GPA 4.0)}{Graduation `24}
-	\begin{itemize}
+	\begin{itemize}[leftmargin=14mm, rightmargin=7mm]
 		\resitem{Relevant courses: Discrete mathematics, Operating Systems, Reverse Engineering, Computer Networking, Linear Algebra}
 	\end{itemize}
-
-\end{itemize}
 
 \resheading{Skills}
 
@@ -90,63 +90,47 @@ AWS, Git, Docker, Jenkins, Travis, OpenShift, OpenStack, Redis, Bash Scripts
 \end{description}
 
 \resheading{Work Experience}
-\begin{itemize}
-\item
+
 	\ressubheading{Amazon}{Seattle, WA}{Software Dev Engineer Intern}{Jun`23 - Aug`23}
-	\begin{itemize}
+	\begin{itemize}[leftmargin=14mm, rightmargin=7mm]
 		\resitem{Improved concurrency limitations of AWS Control Tower control operations by 2.5x.}
 		\resitem{Implemented distributed queueing mechanism with scalability and fault tolerance.}
 		\resitem{Created load and integration tests to evaluate concurrency limits and response times.}
 	\end{itemize}
 
-\item
+
 	\ressubheading{AuCode}{Amherst, MA}{Software Enginner Intern}{Jun`22 - Aug`22}
-	\begin{itemize}
+	\begin{itemize}[leftmargin=14mm, rightmargin=7mm]
 		\resitem{Streamlined DevOps workflow with Github actions, Amazon ECS, and Application load balancers.}
 		\resitem{Developed web crawling infrastructure with autoscaling capabilities using Redis message queues and Celery workers.}
 		\resitem{Automated migration from RDS PostgreSQL to Amazon S3 in parquet format.}
 		\resitem{Utilized Gensim/GPT3/Sklearn to train models for topic-modeling and NLP classification tasks.}
 	\end{itemize}
 
-% \item
-% 	\ressubheading{Build UMass}{Amherst, MA}{Software Developer}{Sep`21 - May`22}
-% 	\begin{itemize}
-% 		\resitem{Fueled startup (\href{https://funnl.co/}{funnl.co}) by building a social platform that fosters deeper professional relationships.}
-% 		\resitem{Built critical features of Email scheduling and Identity security.}
-% 		\resitem{Matured engineering practices with Django unit tests to improve code coverage.}
-% 	\end{itemize}
-
-\item 
-	\ressubheading{Red Hat}{Boston, MA}{Research Intern for ChRIS Project}{Jun`19 - Aug`19 , Jun`20 - Aug`20}
-	\begin{itemize}
+	\ressubheading{Red Hat}{Boston, MA}{Research Intern for ChRIS Project}{Jun`20 - Aug`20}
+	\begin{itemize}[leftmargin=14mm, rightmargin=7mm]
 		\resitem{Designed monitors with Jenkins to measure system performance and created controls for taking corrective actions.}
 		\resitem{Enabled faster runtime for Image detection Proof of Concept with GPU capabilities of Tensorflow.}
 		\resitem{Ensured scalable/reliable services by optimizing multithreading and identifying deadlock scenarios.}
 	\end{itemize}
 
-\end{itemize}
-
 
 \resheading{Hackathons \& Projects}
-\begin{itemize}
-\item
-	\ressubheading{Smart Notes}{HackPHS}{Awarded Best Cloud Hack}{\href{https://arnavn101.github.io/smartnotes}{arnavn101.github.io/smartnotes}}
-	\begin{itemize}
+
+	\ressubheading{Smart Notes}{HackPHS `19}{Awarded Best Cloud Hack}{\href{https://arnavn101.github.io/smartnotes}{arnavn101.github.io/smartnotes}}
+	\begin{itemize}[leftmargin=14mm, rightmargin=7mm]
 		\resitem{Creates concise summaries and fetches the main topics of the text with Google's Page Rank algorithm.}
 	\end{itemize}
 
-\item
-	\ressubheading{Path Finder}{HackWHS}{Finalist}{\href{https://github.com/arnavn101/Path_Finder}{github.com/arnavn101/Path\_Finder}}
-	\begin{itemize}
+
+	\ressubheading{Path Finder}{HackWHS `19}{Finalist}{\href{https://github.com/arnavn101/Path_Finder}{github.com/arnavn101/Path\_Finder}}
+	\begin{itemize}[leftmargin=14mm, rightmargin=7mm]
 		\resitem{Suggests an optimized college path for students based on their skills and academic record with artificial neural networks.}
 	\end{itemize}
 
-\item
-	\ressubheading{Quantify}{}{\href{https://github.com/GreenPlanet-Capital/Quantify}{github.com/GreenPlanet-Capital/Quantify}}{}
-	\begin{itemize}
+	\ressubheading{Quantify}{Mar `22}{}{\href{https://github.com/GreenPlanet-Capital/Quantify}{github.com/GreenPlanet-Capital/Quantify}}
+	\begin{itemize}[leftmargin=14mm, rightmargin=7mm]
 		\resitem{Performs technical analysis and backtesting for financial assets with Alpaca marketstore integration.}
 	\end{itemize}
-	
-\end{itemize}
 
 \end{document}
